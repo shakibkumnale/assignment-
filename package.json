@@ -7,9 +7,8 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd frontend && npm run dev",
-    "start": "cd server && npm start",
-    "install-all": "npm install && cd server && npm install && cd ../frontend && npm install",
-  "build": "npm run install-all && cd frontend && npm run build"
+    "build": "cd frontend && npm run build",
+    "start": "cd server && npm start"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +16,5 @@
   "type": "commonjs",
   "devDependencies": {
     "concurrently": "^9.2.0"
-  },
-  "dependencies": {
-    "dotenv": "^17.0.1"
   }
 }
