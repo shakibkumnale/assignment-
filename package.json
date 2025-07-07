@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm run dev",
-    "client": "cd frontend && npm run dev",
-    "build": "cd frontend && npm run build",
-    "start": "cd server && npm start"
+     "build": "cd frontend && npm install && npm run build",
+    "vercel-build": "cd frontend && npm install && npm run build",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd frontend && npm run dev\"",
+    "install-all": "npm install && cd frontend && npm install && cd ../server && npm install"
   },
   "keywords": [],
   "author": "",
