@@ -7,6 +7,8 @@ import Form from './pages/Form';
 import Display from './pages/Display';
 import About from './pages/About';
 
+import NotFound from './pages/NotFound';
+
 const App = () => {
   return (
     <Router>
@@ -18,6 +20,7 @@ const App = () => {
             <Route path="/form" element={<Form />} />
             <Route path="/display" element={<Display />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
